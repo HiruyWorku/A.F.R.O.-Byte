@@ -50,7 +50,7 @@ A.F.R.O Byte is a non-profit initiative focused on empowering African youth with
 
 ### Machine Learning
 - **Natural Language Processing (NLP)** - for the custom chatbot
-- **TensorFlow** / **PyTorch** - for training and deploying machine learning models
+- **TensorFlow** / **PyTorch** - for training and deploying machine learning models.
 
 ### Mobile
 - **Android (Java/Kotlin)** - mobile application development for Android OS
