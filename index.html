@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to A.F.R.O Byte</title>
+    <title>A.F.R.O Byte - Empowering African Tech Talent</title>
+    <meta name="description" content="A.F.R.O Byte - Empowering African students with technology skills for the future. Join our community of learners and innovators.">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add AOS library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         /* Global Styles */
         :root {
@@ -146,101 +149,202 @@
     </style>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading"></div>
 
-<header class="header">
-    <a href="index.html" class="logo">
-        <img src="CroppedLogo.jpg" alt="Logo" class="logo-img glitch" data-text="A.F.R.O">
-    </a>
-    <i class='bx bx-menu' id="menu-icon"></i>
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html" class="nav-link">Home <i class='bx bx-home'></i></a></li>
-            <li><a href="LearnPage.html" class="nav-link">Learn <i class='bx bx-book'></i></a></li>
-            <li><a href="CoursesPage.html" class="nav-link">Courses <i class='bx bx-code-alt'></i></a></li>
-            <li><a href="ChatbotPage.html" class="nav-link">Chatbot <i class='bx bx-message-square-dots'></i></a></li>
-            <li><a href="ContactPage.html" class="nav-link">Contact <i class='bx bx-envelope'></i></a></li>
-            <li><a href="ResourcesPage.html" class="nav-link active">Resources <i class='bx bx-folder'></i></a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="CroppedLogo.jpg" alt="A.F.R.O Byte Logo" class="logo-img glitch" data-text="A.F.R.O">
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-link active">Home <i class='bx bx-home'></i></a></li>
+                <li><a href="LearnPage.html" class="nav-link">Learn <i class='bx bx-book'></i></a></li>
+                <li><a href="CoursesPage.html" class="nav-link">Courses <i class='bx bx-code-alt'></i></a></li>
+                <li><a href="ChatbotPage.html" class="nav-link">Chatbot <i class='bx bx-message-square-dots'></i></a></li>
+                <li><a href="ContactPage.html" class="nav-link">Contact <i class='bx bx-envelope'></i></a></li>
+                <li><a href="ResourcesPage.html" class="nav-link">Resources <i class='bx bx-folder'></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-    <div class="welcome-section" style="text-align: center; padding: 1rem; color: #aaa; margin-top: 100px;">
-        <h1>Welcome to A.F.R.O Byte!</h1>
-        <p>Your online platform dedicated to empowering minority groups and elevating them to new heights in technology.</p>
-    </div>
-    <a href="LearnPage.html" class="cta-button">Get Started</a>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="welcome-section" data-aos="fade-up">
+            <h1 class="glitch" data-text="Welcome to A.F.R.O Byte">Welcome to A.F.R.O Byte</h1>
+            <p>Your gateway to tech excellence. Empowering African talent through innovative education and real-world experience.</p>
+            <div class="hero-buttons">
+                <a href="LearnPage.html" class="cta-button">Start Learning</a>
+                <a href="#featured-programs" class="cta-button secondary">Explore Programs</a>
+            </div>
+        </div>
+    </section>
 
-<section class="featured-programs">
-    <div class="program-card">
-        <h3>Internship Opportunities</h3>
-        <p>Get hands-on experience with leading tech companies.</p>
-        <a href="CoursesPage.html" class="cta-button">Learn More</a>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/watch?v=OhMBBbhbX6A" title="Internship Opportunities Video 1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/watch?v=yjveULxT9WI" title="Internship Opportunities Video 2" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/watch?v=-U0u1tJk0OE" title="Internship Opportunities Video 3" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="program-card">
-        <h3>Coding Bootcamps</h3>
-        <p>Accelerate your career with our comprehensive bootcamps.</p>
-        <a href="LearnPage.html" class="cta-button">Learn More</a>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/5WUp2vYYsAw" title="Coding Bootcamp Video 1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/j9kz0yyXfbA" title="Coding Bootcamp Video 2" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/6w7t3LO9XaI" title="Coding Bootcamp Video 3" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div class="program-card">
-        <h3>Mentorship Programs</h3>
-        <p>Get guidance and support from industry experts.</p>
-        <a href="ContactPage.html" class="cta-button">Learn More</a>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/Dy7P-HvVA8s" title="Mentorship Video 1" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/9_Dpsm59gEw" title="Mentorship Video 2" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/fqJHz0U_6tQ" title="Mentorship Video 3" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
+    <!-- Featured Programs Section -->
+    <section id="featured-programs" class="featured-programs">
+        <h2 class="section-title" data-aos="fade-up">Featured Programs</h2>
+        <div class="programs-grid">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="program-icon">
+                    <i class='bx bx-briefcase'></i>
+                </div>
+                <h3>Internship Opportunities</h3>
+                <p>Get hands-on experience with leading tech companies and build your professional network.</p>
+                <div class="program-features">
+                    <span><i class='bx bx-check'></i> Real-world projects</span>
+                    <span><i class='bx bx-check'></i> Industry mentorship</span>
+                    <span><i class='bx bx-check'></i> Career guidance</span>
+                </div>
+                <a href="CoursesPage.html" class="cta-button">Learn More</a>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/OhMBBbhbX6A" title="Internship Opportunities" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
 
-<section class="blog">
-    <h2>Latest News</h2>
-    <div class="blog-card">
-        <h3>How to Prepare for Tech Internships</h3>
-        <p>Get tips on how to ace your tech internship interviews...</p>
-        <a href="https://www.indeed.com/career-advice/career-development/what-to-expect-during-an-internship-interview" class="cta-button">Read More</a>
-    </div>
-    <div class="blog-card">
-        <h3>5 Skills Every Developer Should Learn in 2024</h3>
-        <p>Discover the key skills to stand out as a developer this year...</p>
-        <a href="https://dev.to/somadevtoo/5-skills-programmers-and-developers-should-learn-in-2024-3bmp" class="cta-button">Read More</a>
-    </div>
-</section>
+            <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="program-icon">
+                    <i class='bx bx-code-block'></i>
+                </div>
+                <h3>Coding Bootcamps</h3>
+                <p>Accelerate your career with our intensive, project-based coding bootcamps.</p>
+                <div class="program-features">
+                    <span><i class='bx bx-check'></i> Full-stack development</span>
+                    <span><i class='bx bx-check'></i> Project portfolio</span>
+                    <span><i class='bx bx-check'></i> Job placement support</span>
+                </div>
+                <a href="LearnPage.html" class="cta-button">Learn More</a>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/5WUp2vYYsAw" title="Coding Bootcamp" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
 
-<section class="cta">
-    <h2 style="color: #111010;">Ready to Level Up?</h2>
-    <p style ="color: #111010">Join the A.F.R.O Byte community today and start your journey in tech!</p>
-    <a href="signup.html" class="cta-button">Sign Up Now</a>
-</section>
+            <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="program-icon">
+                    <i class='bx bx-user-voice'></i>
+                </div>
+                <h3>Mentorship Programs</h3>
+                <p>Connect with industry experts for personalized guidance and career development.</p>
+                <div class="program-features">
+                    <span><i class='bx bx-check'></i> 1-on-1 mentoring</span>
+                    <span><i class='bx bx-check'></i> Career planning</span>
+                    <span><i class='bx bx-check'></i> Skill development</span>
+                </div>
+                <a href="ContactPage.html" class="cta-button">Learn More</a>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Dy7P-HvVA8s" title="Mentorship Program" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>AfroByte</p>
-</footer>
+    <!-- Latest News Section -->
+    <section class="blog">
+        <h2 class="section-title" data-aos="fade-up">Latest News</h2>
+        <div class="blog-grid">
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="blog-image">
+                    <img src="https://source.unsplash.com/random/800x600/?technology" alt="Tech Internship">
+                </div>
+                <div class="blog-content">
+                    <h3>How to Prepare for Tech Internships</h3>
+                    <p>Essential tips and strategies to ace your tech internship interviews and secure your dream position.</p>
+                    <a href="https://www.indeed.com/career-advice/career-development/what-to-expect-during-an-internship-interview" class="cta-button">Read More</a>
+                </div>
+            </div>
 
-<script src="script.js"></script>
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="blog-image">
+                    <img src="https://source.unsplash.com/random/800x600/?coding" alt="Developer Skills">
+                </div>
+                <div class="blog-content">
+                    <h3>5 Skills Every Developer Should Learn in 2024</h3>
+                    <p>Stay ahead of the curve with these essential skills that will define the future of tech development.</p>
+                    <a href="https://dev.to/somadevtoo/5-skills-programmers-and-developers-should-learn-in-2024-3bmp" class="cta-button">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="cta-content" data-aos="fade-up">
+            <h2>Ready to Transform Your Future?</h2>
+            <p>Join the A.F.R.O Byte community today and start your journey in tech!</p>
+            <div class="cta-buttons">
+                <a href="signup.html" class="cta-button">Sign Up Now</a>
+                <a href="ContactPage.html" class="cta-button secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>A.F.R.O Byte</h3>
+                <p>Empowering African tech talent through education and opportunity.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="LearnPage.html">Learn</a></li>
+                    <li><a href="CoursesPage.html">Courses</a></li>
+                    <li><a href="ContactPage.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 A.F.R.O Byte. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Loading screen
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            loading.style.opacity = '0';
+            setTimeout(() => {
+                loading.style.display = 'none';
+            }, 500);
+        });
+
+        // Mobile menu toggle
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+        
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
